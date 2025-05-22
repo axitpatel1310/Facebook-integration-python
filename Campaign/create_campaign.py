@@ -16,8 +16,8 @@ payload = {
 response = requests.post(url, data=payload)
 
 if response.status_code == 200:
-    print("✅ Campaign created!")
+    print("Campaign created!")
     print(response.json())
 else:
-    print("❌ Error creating campaign")
+    print("Error creating campaign")
     print(response.status_code, response.text)
